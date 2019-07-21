@@ -1,0 +1,24 @@
+{
+  "name": "calculator",
+  "version": "0.0.1",
+  "description": "This is a simple calculator to study AWS code pipeline",
+  "main": "./dist1/index.js",
+  "types": "./dist1/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve":"tsc && node dist1/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git-codecommit.us-east-1.amazonaws.com/v1/repos/node-calculator"
+  },
+  "author": "Durgesh Rathod",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^3.5.3"
+  },
+  "dependencies": {
+    "@types/node": "^12.6.3"
+  }
+}
