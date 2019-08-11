@@ -1,0 +1,17 @@
+phases: 
+  install: 
+    runtime-versions: 
+      nodejs: 10 
+  build: 
+    commands: 
+      - "echo Build started..." 
+      - "npm install gulp -g" 
+      - "npm i"
+      - "npm run build"
+      - "npm run upload" 
+      - "echo Build completed." 
+  post_build: 
+    commands: 
+  pre_build: 
+    commands: 
+version: 0.1
