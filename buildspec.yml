@@ -5,13 +5,15 @@ phases:
   build: 
     commands: 
       - "echo Build started..." 
-      - "npm install gulp -g" 
+      #- "npm install gulp -g" 
       - "npm i"
       - "npm run build"
-      - "npm run upload" 
+      #- "npm run upload" 
       - "echo Build completed." 
   post_build: 
-    commands: 
+    commands:
+      - "echo Testing"
+      - "npm run test"
   pre_build: 
     commands: 
-version: 0.1
+version: 0.2
